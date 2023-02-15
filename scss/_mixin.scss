@@ -1,0 +1,87 @@
+
+/// Mixin que cambia el contenido de un elemento segun el tamaño de la pantalla
+/// @example
+/// .header{
+///    @include response('lg'){
+///       background-color: red;
+///   }
+/// }
+/// @param {string} $breakpoint - tamaño de la pantalla
+/// @param {string} $content - contenido del elemento
+/// @group responsive
+@mixin response($breakpoint){
+    @if($breakpoint == 'xl'){
+        @media (max-width: 1200px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'lg'){
+        @media (max-width: 992px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'md'){
+        @media (max-width: 768px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'sm'){
+        @media (max-width: 576px){
+            @content;
+        }
+    }
+
+    @if($breakpoint == 'xs'){
+        @media (max-width: 320px){
+            @content;
+        }
+    }
+}
+
+
+/// Mixin que coloca los elementos del nav en la misma linea
+/// @example
+/// .navigation{
+///   @include navigation();
+/// }
+/// @group navigation
+@mixin navigation(){
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &-item{
+        list-style: none;
+    }
+
+    &-link{
+        color: getColor('primary');
+        text-decoration: none;
+        font-size: getFontSize('xs');
+        transition: all 0.3s;
+        &:hover{
+            color: lighten(getColor('primary'), 10%);
+        }
+    }
+}
+
+/// Mixin de posicionamiento con flexbox
+/// @example
+/// .footer{
+///    @include flex();
+/// }
+/// @param {string} $direction[row] - direccion de los elementos
+/// @param {string} $justify[center] - justificacion de los elementos
+/// @param {string} $align[center] - alineacion de los elementos
+@mixin flex($direction: row, $justify: center, $align: center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

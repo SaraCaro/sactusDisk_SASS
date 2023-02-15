@@ -1,0 +1,78 @@
+////Proyecto: Ejemplo Sassdoc
+/// @author: Sara Caro
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+/// mapa de colores
+/// @group colores
+$colors: (
+    primary: #F2EDDC,
+    secondary: #000,
+    tertiary: #A6554E
+);
+
+/// Funcion que devuelve un color del vector de colores
+/// @group colores
+/// @param {string} $color - nombre color del vector de colores
+/// @return {color} - color en hexadecimal
+@function getColor($color) {
+    @return map-get($colors, $color);
+}
+
+
+/// mapa de tamaños de fuente
+/// @group tamaños
+$font-sizes: (
+    xxl: 6rem,
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem,
+    xxs: 1.4rem,
+);
+
+/// Funcion que devuelve un tamaño de fuente del vector de tamaños
+/// @group tamaños
+/// @param {string} $size - nombre tamaño del vector de tamaños
+/// @return {size} -
+@function getFontSize($size) {
+    @return map-get($font-sizes, $size);
+}
+
+
+/// mapa de pesos de fuente
+/// @group pesos
+$font-weights: (
+    light: 300,
+    regular: 400,
+    bold: 700,
+);
+
+/// Funcion que devuelve un peso de fuente del vector de pesos
+/// @group pesos
+/// @param {string} $weight - nombre peso del vector de pesos
+/// @return {weight} -
+@function getFontWeight($weight) {
+    @return map-get($font-weights, $weight);
+}
+
+
+$font-family: 'IBM Plex Serif', serif;
+
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+
+
+
+$font-family: 'IBM Plex Serif', serif;
+
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+
+
+
+$carousel-control-color:       getColor('secondary');

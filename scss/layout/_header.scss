@@ -1,0 +1,31 @@
+/// Header
+.header{
+    background-color: getColor('primary');
+    padding: 20px 0;
+    @include flex(row, space-between, center);
+
+    &-logo{
+        img{
+            width: 180px;
+        }
+    }
+
+    &-sesion{
+        i{
+            color: getColor('secondary');
+            scale: 1.3;
+            margin: 0 20px;
+        }
+        &-login, &-carrito{
+            i{
+                color: getColor('secondary');
+                text-decoration: none;
+                font-size: getFontSize('md');
+                &:hover{
+                    color: getColor('tertiary');
+                }
+            }
+        }
+    }
+
+}

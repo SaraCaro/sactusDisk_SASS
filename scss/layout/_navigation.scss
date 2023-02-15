@@ -1,0 +1,20 @@
+/// Layout de navegación
+
+.header-menu-list{
+    @include flex(row, space-between, center);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        margin: 0 10px;
+        a{
+            color: getColor('secondary');
+            text-decoration: none;
+            font-size: getFontSize('md');
+            font-weight: getFontWeight('regular');
+            &:hover{
+                color: getColor('tertiary');
+            }
+        }
+    }
+}
