@@ -1,0 +1,39 @@
+.catalogo{
+
+    .card{
+        width: 18rem;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        &-img{
+            &-item{
+                width: 210px;
+            }
+        }
+        &-text{
+            font-size: getFontSize('xs');
+            font-weight: getFontWeight('bold');
+        }
+
+        &-subtitle{
+            font-size: getFontSize('xxs');
+            font-weight: getFontWeight('light');
+        }
+
+        &-button{
+            @include buttons('xxs');
+        }
+    }
+
+    &-title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &-text{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 80px;
+    }
+}

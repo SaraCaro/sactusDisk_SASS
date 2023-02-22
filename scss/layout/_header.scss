@@ -10,6 +10,23 @@
         }
     }
 
+    &-search{
+        &-input{
+            border: none;
+            border-bottom: 1px solid getColor('secondary');
+            background-color: getColor('primary');
+            color: getColor('secondary');
+            font-size: getFontSize('md');
+            padding: 5px 0;
+            &:focus{
+                outline: none;
+            }
+        }
+        &-button{
+            @include buttons();
+        }
+    }
+
     &-sesion{
         i{
             color: getColor('secondary');

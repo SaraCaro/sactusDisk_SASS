@@ -1,0 +1,13 @@
+.aside{
+   &-title{
+      font-size: getFontSize('md');
+      font-weight: getFontWeight('bold');
+      text-align: center;
+   }
+
+    &-list{
+        font-size: getFontSize('xxs');
+        color: getColor('gray');
+    }
+    
+}

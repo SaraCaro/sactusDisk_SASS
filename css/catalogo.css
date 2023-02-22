@@ -1,0 +1,20 @@
+.catalogo .card {
+  width: 18rem;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  .catalogo .card-img {
+    width: 200px; }
+  .catalogo .card-text {
+    font-size: getFontSize("xs");
+    font-weight: getFontWeight("bold"); }
+
+.catalogo-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.catalogo-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 80px; }

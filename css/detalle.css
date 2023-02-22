@@ -1,0 +1,39 @@
+.detalle-img-item {
+  width: 300px; }
+
+.detalle-text {
+  font-size: getFontSize("md");
+  font-weight: getFontWeight("regular"); }
+  .detalle-text-title {
+    font-size: getFontSize("lg");
+    font-weight: getFontWeight("bold"); }
+  .detalle-text-precio {
+    font-size: getFontSize("lg");
+    font-weight: getFontWeight("bold");
+    color: getColor("tertiary"); }
+  .detalle-text-input-label {
+    font-size: getFontSize("xs");
+    font-weight: getFontWeight("regular"); }
+  .detalle-text-input-item {
+    height: 40px;
+    border: 1px solid getColor("quaternary");
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: getFontSize("xs");
+    font-weight: getFontWeight("regular");
+    color: getColor("secondary");
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  .detalle-text-button {
+    background-color: getColor("tertiary");
+    color: getColor("primary");
+    font-size: getFontSize("xs");
+    font-weight: getFontWeight("bold");
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s; }
+    .detalle-text-button:hover {
+      background-color: getColor("primary");
+      color: getColor("secondary");
+      border: 1px solid getColor("secondary"); }

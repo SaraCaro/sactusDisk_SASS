@@ -85,3 +85,27 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin paddingTop(){
+    padding-top: 5em;
+}
+
+/// Mixin para los botones
+/// @param {string} $size[xs] - tamaño del boton
+/// @group buttons
+
+@mixin buttons($size: 'xs', $background: 'tertiary'){
+    background-color: getColor($background);
+    color: getColor('primary');
+    font-size: getFontSize($size);
+    font-weight: getFontWeight('bold');
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: getColor('primary');
+        color: getColor('secondary');
+        border: 1px solid getColor('secondary');
+    }
+}
