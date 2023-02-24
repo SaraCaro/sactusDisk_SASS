@@ -1,4 +1,12 @@
+// Componente detalle del producto
+
 .detalle{
+    @include response('md'){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin-left: 20%;
+    }
     &-img{
         &-item{
             width:300px;
@@ -26,6 +34,7 @@
             }
 
             &-item{
+                width: 15%;
                 height: 40px;
                 border: 1px solid getColor('quaternary');
                 border-radius: 5px;

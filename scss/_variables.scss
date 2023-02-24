@@ -11,7 +11,8 @@ $colors: (
     secondary: #000,
     tertiary: #A6554E,
     quaternary: #ccc,
-    quintenary: #53524e,
+    quintenary: #53524e
+    carousel-bg: #ddd8c5,
 );
 
 /// Funcion que devuelve un color del vector de colores
@@ -62,16 +63,22 @@ $font-weights: (
 
 
 
-
+///
 $font-family: 'IBM Plex Serif', serif;
 
+///
 $max-width: 1400px;
+///
 $default-margin: 0;
+///
 $default-padding: 0;
 
 
-
+///
 $carousel-control-color: getColor('secondary');
+
+///
 $nav-link-color: getColor('secondary');
+///
 $nav-link-hover-color:  getColor('tertiary');
 

@@ -1,0 +1,22 @@
+// Componente: Carrito
+
+.container{
+    .card{
+        border-radius: 15px;
+
+        &-text{
+            font-size: getFontSize('xxs');
+            font-weight: getFontWeight('bold');
+        }
+
+        &-item{
+            font-size: getFontSize('xs');
+            font-weight: getFontWeight('light');
+        }
+
+        &-price{
+            font-size: getFontSize('xs');
+            font-weight: getFontWeight('bold');
+        }
+    }
+}

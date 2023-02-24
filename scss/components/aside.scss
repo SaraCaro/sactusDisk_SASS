@@ -1,4 +1,9 @@
+// Componente: Aside
+
 .aside{
+    @include response('md'){
+        display: none;
+    }
    &-title{
       font-size: getFontSize('md');
       font-weight: getFontWeight('bold');

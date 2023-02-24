@@ -1,0 +1,11 @@
+.container .card {
+  border-radius: 15px; }
+  .container .card-text {
+    font-size: getFontSize("xxs");
+    font-weight: getFontWeight("bold"); }
+  .container .card-item {
+    font-size: getFontSize("xs");
+    font-weight: getFontWeight("light"); }
+  .container .card-price {
+    font-size: getFontSize("xs");
+    font-weight: getFontWeight("bold"); }

@@ -1,0 +1,18 @@
+.form-register {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto; }
+  .form-register-img {
+    width: 70%;
+    margin-left: 15%; }
+  .form-register-title {
+    font-size: getFontSize("lg");
+    font-weight: getfontWeight("bold");
+    text-align: center; }
+  .form-register .form-floating {
+    margin-bottom: 10px; }
+  .form-register-registerLink {
+    font-size: getFontSize("xxs"); }
+  .form-register-rights {
+    font-size: getFontSize("xxs");
+    text-align: center; }

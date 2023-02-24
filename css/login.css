@@ -1,0 +1,23 @@
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto; }
+  .form-signin-img {
+    width: 70%;
+    margin-left: 15%; }
+  .form-signin-title {
+    font-size: getFontSize("lg");
+    font-weight: getfontWeight("bold");
+    text-align: center; }
+  .form-signin .form-floating {
+    margin-bottom: 10px; }
+    .form-signin .form-floating-label {
+      font-size: getFontSize("xxs"); }
+  .form-signin .checkbox {
+    font-size: getFontSize("xxs");
+    margin-left: 17rem; }
+  .form-signin-registerLink {
+    font-size: getFontSize("xxs"); }
+  .form-signin-rights {
+    font-size: getFontSize("xxs");
+    text-align: center; }

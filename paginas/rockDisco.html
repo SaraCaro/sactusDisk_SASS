@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Discos</title>
+    <script src="https://kit.fontawesome.com/54411caa33.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="header-logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+        </div>
+        <div class="header-menu">
+            <ul class="header-menu-list">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Discos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../paginas/popDisco.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="../paginas/rockDisco.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="#">Rap</a></li>
+                  <li><a class="dropdown-item" href="#">Soul</a></li>
+              </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Vinilos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../paginas/popDisco.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="../paginas/rockVinilo.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="#">Rap</a></li>
+                  <li><a class="dropdown-item" href="#">Soul</a></li>
+              </ul>
+              </li>
+            </ul>
+        </div>
+        <div class="header-search">
+            <form action="" class="header-search-form">
+                <input type="text" class="header-search-input" placeholder="Buscar">
+                <button class="header-search-button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-sesion">
+            <a href="../paginas/carrito.html" class="header-sesion-carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../paginas/login.html" class="header-sesion-login"><i class="fas fa-user"></i></a>
+        </div>            
+    </header>
+
+
+    <!-- main -->
+    <div class="d-flex justify-content-between">
+        <div class="aside col-2 border border-dark">
+            <h3 class="aside-title">Géneros</h3>
+            <ul class="aside-list nav d-flex flex-column">
+                <li><a class="nav-link" href="../paginas/popDisco.html">Pop</a></li>
+                <li><a class="nav-link" href="../paginas/rockDisco.html">Rock</a></li>
+                <li><a class="nav-link" href="#">Metal</a></li>
+                <li><a class="nav-link" href="#">Rap</a></li>
+                <li><a class="nav-link" href="#">Reggae</a></li>
+                <li><a class="nav-link" href="#">Electrónica</a></li>
+                <li><a class="nav-link" href="#">Hip Hop</a></li>
+                <li><a class="nav-link" href="#">Soul</a></li>
+                <li><a class="nav-link" href="#">Jazz</a></li>
+                <li><a class="nav-link" href="#">Punk</a></li>
+            </ul>
+        </div>
+        <div class="catalogo col-10">
+            <h2 class="catalogo-title">Discos Rock</h2>
+            <div class="catalogo-text d-flex flex-wrap">
+                <div class="card text-center mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center align-items-center card-img">
+                            <img class="card-img-item" src="../images/rock/metallica.png" alt="">
+                        </div>
+                        <p class="card-text">Metallica</p>
+                        <p class="card-subtitle">Black Album</p>
+                      <a href="./discoMetallica.html" class="btn btn-secondary card-button">16.99€</a>
+                    </div>
+                </div>
+                <div class="card text-center mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center align-items-center card-img">
+                            <img class="card-img-item" src="../images/rock/roses.png" alt="">
+                        </div>
+                        <p class="card-text">Guns N'Roses</p>
+                        <p class="card-subtitle">Appetite for destruction</p>
+                      <a href="#" class="btn btn-secondary card-button">13.99€</a>
+                    </div>
+                </div>
+                <div class="card text-center mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center align-items-center card-img">
+                            <img class="card-img-item" src="../images/acdc.png" alt="">
+                        </div>
+                        <p class="card-text">AC/DC</p>
+                        <p class="card-subtitle">Power Up</p>
+                      <a href="#" class="btn btn-secondary card-button">18.99€</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+        <footer class="footer py-5">
+            <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="footer-text">Donde estamos<i class="fa-solid fa-location-dot ms-3"></i></h5>
+                <img src="../images/mapa.png" alt="logo" width="180">
+            </div>
+        
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="footer-text">Contacto</h5>
+                <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="fa-solid fa-envelope"></i>Email
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">sactus@gmail.com</li>
+                    </ul>
+                </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="fa-solid fa-mobile-retro"></i>Telefono
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">+34 777 777 777</li>
+                    </ul>
+                </a></li>
+                </ul>
+            </div>
+        
+            <div class="col-md-5 offset-md-1 mb-3">
+                <h5 class="footer-text">Sobre Nosotros</h5>
+                <p>
+                    Somos una empresa dedicada a la venta de discos de vinilo y cd. Nuestro objetivo es ofrecer a nuestros clientes una gran variedad de discos de diferentes artistas y estilos musicales.
+                </p>
+            </div>
+            </div>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 SactusDisk. All rights reserved.</p>
+            <ul class="footer-social list-unstyled d-flex">
+                <li class="ms-5"><a class="link-dark" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="ms-5"><a class="link-dark" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="ms-5"><a class="link-dark" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+            </div>
+            <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+        </footer>
+    </div>
+
+</body>
+</html>

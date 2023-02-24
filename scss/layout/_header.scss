@@ -1,5 +1,9 @@
 /// Header
 .header{
+    @include response('md'){
+        display: inline-block;
+        margin-left: 30%;
+    }
     background-color: getColor('primary');
     padding: 20px 0;
     @include flex(row, space-between, center);
@@ -11,6 +15,9 @@
     }
 
     &-search{
+        @include response('md'){
+            display: none;
+        }
         &-input{
             border: none;
             border-bottom: 1px solid getColor('secondary');
@@ -28,6 +35,10 @@
     }
 
     &-sesion{
+        @include response('md'){
+            margin-top: 20%;
+            margin-left: 20%;
+        }
         i{
             color: getColor('secondary');
             scale: 1.3;

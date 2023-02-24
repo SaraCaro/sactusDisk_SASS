@@ -1,0 +1,45 @@
+// Componente: Login
+
+.form-signin{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+
+    &-img{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    &-title{
+        font-size: getFontSize('lg');
+        font-weight: getfontWeight('bold');
+        text-align: center;
+    }
+
+    .form-floating{
+        margin-bottom: 10px;
+
+        &-input{
+            @include inputs();
+        }
+    }
+
+    .checkbox{
+        font-size: getFontSize('xxs');
+        margin-left: 17rem;
+    }
+
+    &-registerLink{
+        font-size: getFontSize('xxs');
+    }
+
+    &-rights{
+        font-size: getFontSize('xxs');
+        text-align: center;
+    }
+
+    &-button{
+        @include buttons();
+        width: 100%;
+    }
+}

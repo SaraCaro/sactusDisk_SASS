@@ -1,7 +1,7 @@
 /// Componente de carousel
 
 .carousel{
-    background-color: #ddd8c5;
+    background-color: getColor('carousel-bg');
     &-item{
         &-posicion{
             @include flex();
