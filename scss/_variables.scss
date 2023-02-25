@@ -2,7 +2,8 @@
 /// @author: Sara Caro
 
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=IBM+Plex+Serif&display=swap');
 
 /// mapa de colores
 /// @group colores
@@ -11,7 +12,7 @@ $colors: (
     secondary: #000,
     tertiary: #A6554E,
     quaternary: #ccc,
-    quintenary: #53524e
+    quintenary: #53524e,
     carousel-bg: #ddd8c5,
 );
 
@@ -64,7 +65,9 @@ $font-weights: (
 
 
 ///
-$font-family: 'IBM Plex Serif', serif;
+
+$font-family-title: 'Gloock', serif;
+$font-family-body: 'IBM Plex Serif', serif;
 
 ///
 $max-width: 1400px;

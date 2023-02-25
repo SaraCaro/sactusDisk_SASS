@@ -1,10 +1,12 @@
 // Componente: Catalogo de productos
 
 .catalogo{
+    font-family: $font-family-title;
     @include response('md'){
         @include flex();
     }  
     .card{
+        font-family: $font-family-body;
         width: 18rem;
         margin: 0 auto;
         margin-bottom: 20px;
