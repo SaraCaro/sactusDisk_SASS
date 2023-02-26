@@ -42,37 +42,20 @@ function todo(){
         .pipe(dest('up/css'));
 }
 
-function holamundo(cb){
-    console.log('Hola Mundo');
-    cb();
-}
-
-function adiosmundo(cb){
-    console.log('Adios Mundo');
-    cb();
-}
 
 function pipeline(){
     return src('css/*.css').pipe(dest('up/css'));
 }
 
-function vigila(cb){
-    watch('css/*.css', holamundo);
-    cb();
-}
 
 
-exports.minimiza_y_renombra = minimiza_y_renombra;
+exports.default = parallel(todo, html);
+
+
+exports.pipeline = pipeline;
+exports.todo = todo;
 exports.compilar = compilar;
 exports.generar_docs = generar_docs;
 exports.html = html;
-exports.todo = todo;
-
-exports.holamundo = holamundo;
-exports.adiosmundo = adiosmundo;
-exports.default = holamundo;
-exports.serie = series(adiosmundo, holamundo);
-exports.paralelo = parallel(holamundo, adiosmundo);
-exports.vigila = vigila;
-exports.pipeline = pipeline;
+exports.minimiza_y_renombra = minimiza_y_renombra;
 
